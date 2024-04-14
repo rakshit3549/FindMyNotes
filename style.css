@@ -1,0 +1,257 @@
+.main {
+
+    padding-top: 20px;
+    margin: auto;
+}
+
+.search-box {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+    margin: auto;
+
+}
+
+.rounded-input {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%; 
+}
+
+.input_text{
+    border: none;
+}
+
+.switch-text{
+    color: #ccc;
+    float: right;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+label {
+    float:right;
+}
+
+.search-box input,
+.search-box p {
+    display: inline;
+}
+
+#search:focus {
+    /* border: none;  */
+    outline: none;
+}
+
+.table-container {
+    margin: auto;
+    width: fit-content;
+    visibility: hidden;
+}
+
+.table {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-collapse: collapse;
+    border-bottom: 2px solid;
+    
+}
+
+.content-table {
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+thead,
+tbody {
+    display: block;
+    width: 34em;
+}
+
+.table thead tr th {
+
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.table tbody tr td {
+    border: 2px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* text-align: center; */
+
+}
+
+.col1 {
+    width: 1.5em;
+    text-align: center;
+}
+
+.col2 {
+    width: 13.45em;
+}
+
+.col3 {
+    width: 16em;
+    text-align: center;
+}
+
+.watermr {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background-color: white;
+    padding: 1px 6px;
+    border-radius: 9px;
+    border-style: solid;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 2.6px;
+    bottom: 2.6px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17.3px);
+    -ms-transform: translateX(17.3px);
+    transform: translateX(17.3px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 22.6px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #search:focus{
+    border: #ffffff;
+  }
+
+  .add-tcode{
+    text-align: right;
+    padding-right: 370px;
+    padding-top: 5px;
+  }
+
+@media (max-width: 767px) {
+    .main {
+        padding-top: 10px;
+    }
+
+    .col1 {
+        width: 1.5em;
+        max-width: 1.5em;
+        text-align: center;
+    }
+
+    .col2 {
+        width: 7.5em;
+        max-width: 7.5em;
+        word-break: break-word;
+    }
+
+    .col3 {
+        width: 10em;
+        max-width: 10em;
+    }
+
+    .table {
+        margin-top: 10px;
+        font-size: medium;
+    }
+
+    thead,
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .content-table {
+        height: 76vmax;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .watermr {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        background-color: white;
+        padding: 1px 6px;
+        border-radius: 9px;
+        border-style: solid;
+        z-index: 99;
+        opacity: 0.5;
+    }
+
+    .rounded-input {
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        padding: 10px;
+        width: 90%;
+        
+    }
+    .add-tcode{
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 5px;
+      }
+    
+    
+
+}
